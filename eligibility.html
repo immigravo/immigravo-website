@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eligibility check — Immigravo</title>
+<meta name="description" content="Answer four quick questions to see which U.S. visa route is your likely starting point.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main" style="position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;z-index:100" onfocus="this.style.left='8px'" onblur="this.style.left='-999px'">Skip to content</a>
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="brand" aria-label="Immigravo home"><img class="brand-mark" src="assets/logo-mark.svg" alt="" width="38" height="38"><span class="brand-name">Immigravo</span></a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="visas.html">Visa types</a></li><li><a href="eligibility.html" aria-current="page">Eligibility check</a></li><li><a href="tools.html">Tools</a></li><li><a href="faq.html">FAQ</a></li></ul>
+    <div class="nav-cta">
+      <a href="book.html" class="btn btn-gold">Book a consultation</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile"><ul><li><a href="index.html">Home</a></li><li><a href="visas.html">Visa types</a></li><li><a href="eligibility.html" aria-current="page">Eligibility check</a></li><li><a href="tools.html">Tools</a></li><li><a href="faq.html">FAQ</a></li><li><a class="btn btn-gold" href="book.html">Book a consultation</a></li></ul></nav>
+</header>
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> / Eligibility check</div>
+  <h1>Which visa fits you?</h1><p>Four quick questions point you to your likely starting point. It takes about a minute and nothing you enter leaves your browser.</p>
+</div></section>
+<section class="page-body"><div class="wrap">
+  <div class="quiz-layout">
+    <div class="quiz-shell">
+      <div class="quiz-top">
+        <div class="quiz-dots"><i class="dot-ind" data-i="0"></i><i class="dot-ind" data-i="1"></i><i class="dot-ind" data-i="2"></i><i class="dot-ind" data-i="3"></i></div>
+        <span id="quiz-step-label" aria-live="polite">Question 1 of 4</span>
+      </div>
+      <div class="quiz-body">
+        <div class="quiz-step" data-step="0"><h3>What brings you to the United States?</h3><p class="q-help">Choose the goal that matters most right now.</p><div class="opt-list" data-group="goal"><label class="opt"><input type="radio" name="goal" value="family"> Join or bring family</label><label class="opt"><input type="radio" name="goal" value="work"> Work in the U.S.</label><label class="opt"><input type="radio" name="goal" value="study"> Study in the U.S.</label><label class="opt"><input type="radio" name="goal" value="visit"> Visit for tourism or business</label></div></div><div class="quiz-step" data-step="1"><h3>Where are you right now?</h3><p class="q-help">This decides whether you apply inside the U.S. or at an embassy abroad.</p><div class="opt-list" data-group="location"><label class="opt"><input type="radio" name="location" value="outside"> Outside the United States</label><label class="opt"><input type="radio" name="location" value="inside"> Inside the United States, in valid status</label></div></div><div class="quiz-step" data-step="2"><h3>Do you have a sponsor?</h3><p class="q-help">A U.S. citizen or green card holder relative, or a U.S. employer, willing to file a petition for you.</p><div class="opt-list" data-group="sponsor"><label class="opt"><input type="radio" name="sponsor" value="yes"> Yes, a relative or employer can sponsor me</label><label class="opt"><input type="radio" name="sponsor" value="no"> No, not yet (or not sure)</label></div></div><div class="quiz-step" data-step="3"><h3>When do you hope to arrive or start?</h3><p class="q-help">A rough timeframe is fine.</p><div class="opt-list" data-group="timing"><label class="opt"><input type="radio" name="timing" value="urgent"> Within the next 6 months</label><label class="opt"><input type="radio" name="timing" value="flexible"> In 6 months or more</label></div></div>
+        <div class="quiz-step quiz-result" data-step="4">
+          <h3>Your likely starting point</h3>
+          <div class="result-card"><div class="visa-code" id="result-code"></div><p id="result-text"></p></div>
+          <p class="q-help" style="font-size:13.5px">This is a general starting point, not legal advice. An attorney can confirm it against your full history.</p>
+          <div class="hero-actions" style="margin:18px 0 0">
+            <a href="book.html" id="result-book-btn" class="btn btn-gold">Book a consultation</a>
+            <button type="button" id="quiz-restart" class="btn btn-outline">Start again</button>
+          </div>
+        </div>
+        <div class="quiz-actions" id="quiz-actions">
+          <button type="button" class="btn btn-outline" id="quiz-back" disabled>Back</button>
+          <button type="button" class="btn btn-primary" id="quiz-next" disabled>Next question</button>
+        </div>
+      </div>
+    </div>
+    <aside class="side-note">
+      <h3>Good to know</h3>
+      <ul>
+        <li>Your answers stay in your browser and are not sent to us.</li>
+        <li>Prior visa denials, overstays or criminal records need an attorney's review before you file.</li>
+        <li>Many people qualify for more than one route. An attorney can help you pick the fastest.</li>
+        <li>Want to browse first? See all <a href="visas.html" style="color:var(--gold-deep);font-weight:600">visa types</a>.</li>
+      </ul>
+    </aside>
+  </div>
+</div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><img class="brand-mark" src="assets/logo-mark-light.svg" alt="" width="32" height="32"><span>Immigravo</span></div>
+        <p class="disclaimer">Immigravo is not a law firm and does not provide legal advice. Consultations are performed by independent, licensed attorneys. Use of this site does not create an attorney-client relationship.</p>
+      </div>
+      <div><h5>Visas</h5><ul>
+        <li><a href="visas.html">Immigrant visas</a></li><li><a href="visas.html#nonimmigrant">Nonimmigrant visas</a></li><li><a href="eligibility.html">Eligibility check</a></li></ul></div>
+      <div><h5>Tools</h5><ul>
+        <li><a href="tools.html#panel-checklist">Document checklist</a></li><li><a href="tools.html#panel-fees">Fee calculator</a></li>
+        <li><a href="tools.html#panel-status">Case status tracker</a></li><li><a href="tools.html#panel-bulletin">Visa Bulletin</a></li></ul></div>
+      <div><h5>Company</h5><ul>
+        <li><a href="index.html#how-it-works">How it works</a></li><li><a href="faq.html">FAQ</a></li><li><a href="book.html">Book a consultation</a></li></ul></div>
+      <div><h5>Contact</h5><ul>
+        <li><a href="mailto:immigravo@gmail.com">immigravo@gmail.com</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><p>© 2026 Immigravo, Inc. All rights reserved.</p><p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></p></div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
